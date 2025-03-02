@@ -81,7 +81,7 @@ function blankslate_document_title_separator( $sep ) {
 add_filter( 'the_title', 'blankslate_title' );
 function blankslate_title( $title ) {
     if ( $title == '' ) {
-        return esc_html( '...' );
+        return '';
     } else {
         return wp_kses_post( $title );
     }
